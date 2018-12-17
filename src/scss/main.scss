@@ -1706,3 +1706,141 @@ img{
 
   }
 }
+
+
+
+
+
+
+
+.SissionDetails{
+
+  .Sissiontitle{
+    background: #62555c;
+    color: #fff;
+
+    .maintitle{
+      h5{
+        margin-top:10px;
+      }
+    }
+  }
+
+
+
+  .maindetails{
+    background:#f8f9fc;
+    box-shadow: 0 6px 14px 0 rgba(52,69,88,0.08) !important;
+    // text-align: right;
+    color:#fff;
+    a{
+      color:#fff;
+    }
+
+
+
+    .bigIco{
+      a{
+        color:#000;
+      }
+      img{
+        width: 130px !important;
+        height: 130px;
+      }
+      .grayBtn{
+        background:#a8a8a8;
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        transition-duration: 1s;
+
+        &:hover{
+          opacity: .5;
+        }
+      }
+
+      .orangBtn{
+        @extend .grayBtn;
+        background:#fe763a;
+      }
+      .redBtn{
+        @extend .grayBtn;
+        background:#f2405d;
+      }
+
+    }
+
+
+    .topDetails{
+      background:#fff;
+      .sissionName{
+        background:#01b8cc;
+
+      }
+      .sissionPage{
+        background:#4f8fe3;
+      }
+      .sissionedit{}
+       .sissionNew{
+        background:#66bb6a;
+        flex-grow: 1;
+      }
+      .sissionsu{
+        background:#c5c5c5;
+        flex-grow: 1;
+      }
+
+      .sissiontoSig{
+        background:#fe763a;
+        flex-grow: 1;
+      }
+
+      .sissiontoToApprov{
+        background:#e03004;
+        flex-grow: 1;
+      }
+
+
+      .sissiontoToCont{
+        background:#507c05;
+        flex-grow: 1;
+      }
+
+      .sissiontoFInished{
+        background:#89d704;
+        flex-grow: 1;
+      }
+
+
+      .sissionremove{  i{
+        color:#f2405d;
+        font-size: 26px;
+      }}
+      .sissionTime{
+        background:#f2405d;
+        font:$secondFont;
+        font-size: 16px;
+        img{
+          width: 20px;
+          vertical-align: bottom;
+          margin-top: 5px;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+   }
+
+  }}
+
+
