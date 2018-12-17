@@ -17,9 +17,20 @@ scrollButton.click(function () {
     }, 1000);
 });
 
+
 $('.search-button').click(function(){
   $(this).parent().toggleClass('open');
 });
+
+$('.goBack').click(function(){
+  window.history.back();
+});
+
+
+
+
+
+
 	// Ripple-effect animation
 	$(".ripple-effect").click(function(e) {
 		var rippler = $(this);
@@ -47,7 +58,15 @@ $('.search-button').click(function(){
 		setTimeout(function() {
 			ink.remove();
 		}, 1000);
-	});
+  });
+
+
+
+  $('.trash').on('click', function(){
+    $(this).closest(".filess").remove();
+});
+
+
 	// Ripple-effect-All animation
 	function fullRipper(color, time) {
 		setTimeout(function() {
@@ -87,7 +106,10 @@ $('.search-button').click(function(){
 				}, 1500);
 			}
 		}, time);
-	}
+  }
+
+
+
 	// Form control border-bottom line
 	$('.blmd-line .form-control').bind('focus', function() {
 		$(this).parent('.blmd-line').addClass('blmd-toggled').removeClass("hf");

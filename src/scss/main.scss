@@ -15,8 +15,8 @@ a {
 	-webkit-transition-duration: 1s;
 	-moz-transition-duration: 1s;
 	transition-duration: 1s;
-	text-decoration: none;
-	text-decoration: none;
+	text-decoration: none !important;
+
 	cursor: pointer
 }
 ul {
@@ -585,18 +585,16 @@ input:-webkit-autofill {
 .login-fluid {
 	border-bottom: 7px solid #0a5e9b;
 }
-.footer {
+#footer {
 	position: relative;
 	width: 100%;
 	bottom: 0;
-	background: #fff;
-	.footer-border {
-		background: #0c6eb9;
-border-right: 12px solid #3196e3;
-		left: -30px;
-		-webkit-transform: skewX(48deg);
-		transform: skewX(48deg);
-	}
+  background: #fff;
+  color: $main;
+
+
+
+
 }
 .topMenu {
 	box-shadow: 0 6px 14px 0 rgba(52, 69, 88, .08)!important;
@@ -1337,7 +1335,7 @@ background: #c83b1f;
   // height: 50px;
   position: fixed;
   left: 15px;
-  bottom: 50px;    padding: 0;    padding-bottom: 15px;
+  bottom:200px;    padding: 0;    padding-bottom: 15px;
   cursor: pointer;
   display: none;
   background: #fff;
@@ -1354,14 +1352,17 @@ background: #c83b1f;
 
     }
 
-    a{
+    button{
       color: #c83b1f;
+      background:none;
     }
 
 
      i{
        vertical-align: middle;
      }
+
+
 
 }
 
@@ -1439,15 +1440,15 @@ background: #c83b1f;
       width: 50px;
     }
   }
-  .commity{
-    background: #047166 !important;
 
-
-  }
-  .seission{
+  .nav-item {
     background: #9d8a70 !important;
-
   }
+  .nav-item .active{
+    background:#047166 ;
+  }
+
+
 
 .maintitle{
   flex-direction: row;
@@ -1533,27 +1534,29 @@ img{
 }
 
    }
-  .standing{
-    background:#95c347;
-    color:#fff !important;
-    font-size:20px;
-  }
-  .temp{
-    @extend .standing;
-    background:#ee4638;
-
-  }
-  .sub{
-    @extend .standing;
-    background:#5f93e7;
-  }
-
-  .deansiss{
-    @extend .standing;
-    background:#9e8a71;
-  }
 
 
+}
+
+
+.standing{
+  background:#95c347;
+  color:#fff !important;
+  font-size:20px;
+}
+.temp{
+  @extend .standing;
+  background:#ee4638;
+
+}
+.sub{
+  @extend .standing;
+  background:#5f93e7;
+}
+
+.deansiss{
+  @extend .standing;
+  background:#9e8a71;
 }
 
 @media screen and (max-width: 700px) {
@@ -1578,4 +1581,128 @@ img{
 .maintitle{
   flex-direction: column !important;
 }
+}
+
+.CommityDetails{
+
+  .CommityTitle{
+    background: #505a78;
+    color: #fff;
+  }
+
+
+  .maindetails{
+    background:#fff;
+    box-shadow: 0 6px 14px 0 rgba(52,69,88,0.08) !important;
+    text-align: right;
+    h4{
+      color:#ee4638;
+    }
+    p{
+      background: #f8f9fc;
+      line-height: 2;
+    }
+    a{
+      color:#000;
+    }
+    .userspro{
+      background: #f8f9fc;
+      border-left: 1px solid #e5e6ea;
+      border-bottom: 1px solid #e5e6ea;
+
+      &:last-child{
+        border-left: none;
+      }
+      i{
+        color:#ee4638;
+      }
+    }
+
+    .mainbuttons{
+      .comfilesbg{
+        background: #4f8fe3;
+        color:#fff;
+      }
+      .comachbg{
+        background: #62555c;
+        color:#fff;
+      }
+
+      .modal .close{
+        padding: 10px;
+      }
+
+        .modal-content{
+          top: 40px;
+          background:none;
+        }
+
+        .comfiles{
+          background: rgba(39, 86, 148, 0.85);
+          h6{
+            background: #4f8fe3;
+            color:#fff;
+            width: 142px;
+
+          }
+
+          .filess{
+            background:#fff;
+            box-shadow: 0 6px 14px 0 rgba(52,69,88,0.08) !important;
+            i{
+              font-size: 28px;
+            }
+            .title{
+              flex-grow:3;
+              text-align: right;
+            }
+            .down{
+              i{
+                color: #4f8fe3;
+              }
+            }
+            .trash{
+              i{
+                color:#ee4638;
+              }
+            }
+
+          }
+        }
+
+        .achcontainer{
+          background:#fff;
+          box-shadow: 0 6px 14px 0 rgba(52,69,88,0.08) !important;
+          img{
+            width: 20px;
+            vertical-align: sub;
+          }
+          .down{
+            font:$secondFont;
+          }
+        }
+          .comach{
+            background: rgba(98, 85, 92, 0.8901960784313725);
+            h5{
+              background: #ee4638;
+              color:#fff;
+              width: 182px;
+
+            }
+
+            h6{
+              background: #4f8fe3;
+              color:#fff;
+              width: 142px;
+
+            }
+            .title{
+              flex-grow:3;
+              text-align: right;
+            }
+          }
+
+    }
+
+  }
 }
