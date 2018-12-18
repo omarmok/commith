@@ -9,7 +9,7 @@ $(".notification").hide(500);
 
  var scrollButton = $('.seetings');
 $(window).scroll(function () {
-    $(this).scrollTop() >= 200 ? scrollButton.show() : scrollButton.hide();
+    $(this).scrollTop() >= 100 ? scrollButton.show() : scrollButton.hide();
 });
 scrollButton.click(function () {
     $('html,body').animate({
@@ -59,7 +59,6 @@ $('.goBack').click(function(){
 			ink.remove();
 		}, 1000);
   });
-
 
 
   $('.trash').on('click', function(){
