@@ -8,23 +8,16 @@ $(".notification").hide(500);
 
 
  var scrollButton = $('.seetings');
-$(window).scroll(function () {
-    $(this).scrollTop() >= 100 ? scrollButton.show() : scrollButton.hide();
-});
-scrollButton.click(function () {
-    $('html,body').animate({
-        scrollTop: 0
-    }, 1000);
-});
-
-
-$('.search-button').click(function(){
-  $(this).parent().toggleClass('open');
+    $(window).scroll(function () {
+        $(this).scrollTop() >= 100 ? scrollButton.show() : scrollButton.hide();
+    });
+      scrollButton.click(function () {
+          $('html,body').animate({
+              scrollTop: 0
+          }, 1000);
 });
 
-$('.goBack').click(function(){
-  window.history.back();
-});
+
 
 
 
@@ -60,10 +53,6 @@ $('.goBack').click(function(){
 		}, 1000);
   });
 
-
-  $('.trash').on('click', function(){
-    $(this).closest(".filess").remove();
-});
 
 
 	// Ripple-effect-All animation
@@ -149,4 +138,27 @@ $('.goBack').click(function(){
 			}, 2000);
 		}
   });
+
+
+
 })(jQuery);
+
+$('.goBack').click(function(){
+  window.history.back();
+});
+
+
+
+$('.trash').on('click', function(){
+  $(this).closest(".maindetails").remove();
+});
+
+
+// $('.trash').on('click', function(){
+//   $(this).parent().parent().remove();
+// });
+
+
+$('.trash').on('click', function(){
+  $(this).closest(".filess").remove();
+});
