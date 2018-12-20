@@ -149,8 +149,9 @@ $('.goBack').click(function(){
 
 
 
+
 $('.trash').on('click', function(){
-  $(this).closest(".maindetails").remove();
+  $(this).closest(".maindetails").fadeOut(300);
 });
 
 
