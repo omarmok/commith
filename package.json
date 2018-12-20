@@ -23,5 +23,7 @@
     "minimatch": "^3.0.2",
     "popper.js": "^1.14.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
 }
