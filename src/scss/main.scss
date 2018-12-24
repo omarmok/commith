@@ -24,6 +24,15 @@ ul {
 	padding-right: 0
 }
 
+.modal-footer{
+  background:#fff;
+  .sendBtn{
+    background: #66bb6a !important;
+  }
+  .nonBtn{
+    background: #ee4638 !important;
+  }
+}
 select {
   -webkit-appearance: none;
   border-radius: 0;
@@ -1811,7 +1820,12 @@ img{
     }
   }
 
-
+  .sissionPage{
+    background:#4f8fe3;
+    i{
+      vertical-align: middle;
+    }
+  }
 
   .maindetails{
     background:#fff;
@@ -1821,6 +1835,7 @@ img{
     a{
       color:#fff;
     }
+
 
 
 
@@ -1895,6 +1910,15 @@ img{
         flex-grow: 1;
       }
 
+      .sissionplace{
+        background:#f4811e;
+        flex-grow: 1;
+
+        img{
+          width: 20px;
+        }
+
+  }
 
       .sissionremove{  i{
         color:#f2405d;
@@ -1904,13 +1928,14 @@ img{
         background:#f2405d;
         font:$secondFont;
         font-size: 16px;
+        border-left: 1px solid #ff527d;
+        letter-spacing: 3px;
         img{
           width: 20px;
           vertical-align: bottom;
           margin-top: 5px;
         }
 
-    }
 
 
 
@@ -1927,5 +1952,153 @@ img{
    }
 
   }}
+}
+
+.usertittle{
+  color:#000;
+  text-align: right;
+}
+.sissonallDetails{
+  color:#000;
+  background: #f8f9fc;
 
 
+
+  // start user details
+  .userentryTime{
+    display: flex;
+    flex-grow: 5;
+
+  .mainuser{
+    background: #fff;
+    border-right: 5px solid #66bb6a;
+
+    img{
+      width: 14px;
+    }
+    .username {
+      flex-grow: 1;
+    }
+    .timeent{
+      color:#fe763a;
+      span{
+        color:#000;
+        font:$secondFont;
+        font-size: 14px;
+      }
+
+    }
+
+  }
+  }
+  // end user details
+
+  // start user details
+.leftBtn{
+
+  .sissionPageIn{
+    background: #3a4989;
+    img{
+      width: 9px;
+    }
+    &:hover{
+      opacity:.8;
+      @extend a
+    }
+  }
+
+
+.sissionpaper{
+  background: #66bb6a;
+  img{
+    width: 23px;
+  }
+  &:hover{
+    opacity:.8;
+    @extend a
+  }
+}
+.sissionappology{
+  background: #ee4638;
+  color:#fff;
+  img{
+    width: 23px;
+  }
+
+}
+
+    }
+
+    .modal {
+      background: rgba(45, 33, 60, 0.9);
+      .modal-content{
+        background-color: rgba(255, 255, 255, 0);
+      }
+    .modal-body{
+      background:#fff;
+      .form-control{
+        resize: none;
+        background: #efefef;
+        border: 0;
+
+
+      }
+    }
+    }
+
+
+
+    }
+
+    .SessionSchedule{
+      background: #ee4638;
+      color:#fff;
+      img{
+        width: 23px;
+      }
+    }
+
+    .Sessiondiss{
+
+      .mainuser{
+        background:#edeae3;
+        color:#000;
+        .suname{
+          flex-grow: 1;
+        }
+        .sutime{
+          span{
+            background: #ee4638;
+            color:#fff;
+            font:$secondFont;
+            font-size: 14px;
+          }
+        }
+      }
+.comment{
+  .form-control{
+    resize: none;
+    background: #efefef;
+    border: 0;
+  }
+
+}
+
+    }
+.lastcommtitle{
+  background: #ccdef7 !important;
+  .sutime{
+    font:$secondFont;
+    font-size: 14px;
+  }
+}
+.lastcoment{
+  color:#000;
+  background:#f8f9fc;
+}
+
+
+.previousSubjects{
+  color:#000;
+  background:#d4d4d4 !important;
+}
