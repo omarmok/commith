@@ -154,6 +154,11 @@ $('.trash').on('click', function(){
   $(this).closest(".maindetails").fadeOut(300);
 });
 
+$('.trashed').on('click', function(){
+  $(this).closest(".topDetails").remove();
+});
+
+
 
 // $('.trash').on('click', function(){
 //   $(this).parent().parent().remove();
