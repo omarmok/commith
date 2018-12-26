@@ -168,3 +168,21 @@ $('.trashed').on('click', function(){
 $('.trash').on('click', function(){
   $(this).closest(".filess").remove();
 });
+
+
+
+
+
+$('input[type="radio"]').on('click', function(){
+  if($(this).attr("value")=="attends"){
+    $(".appologytext").hide('slow');
+  }
+  if($(this).attr("value")=="absens"){
+    $(".appologytext").hide('slow');
+  }
+  if($(this).attr("value")=="appology"){
+    $(".appologytext").show();
+  }
+});
+
+
