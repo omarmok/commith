@@ -27,19 +27,19 @@ ul {
   color:#fff;
 
 }
+.sendBtn{
+  background: #66bb6a !important;  color:#fff;
+}
+.nonBtn{
+  background: #ee4638 !important;  color:#fff;
+}
 .modal-footer{
   background:#fff;
-  .sendBtn{
-    background: #66bb6a !important;
-  }
-  .nonBtn{
-    background: #ee4638 !important;
-  }
 }
 select {
-  -webkit-appearance: none;
-  border-radius: 0;
-  -webkit-border-radius: 0px;
+  -webkit-appearance: none !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0px !important;
   background: url(../images/arrow-down.png) #fff no-repeat 12px !important;
 }
 input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"] {
@@ -47,6 +47,8 @@ input[type="date"], input[type="time"], input[type="datetime-local"], input[type
 }
 textarea {
   outline: none;
+  resize: none!important;
+  border-radius: 0 !important;
   box-shadow:none !important;
   border:1px solid #ccc !important;
   }
@@ -2222,3 +2224,88 @@ img{
     }
   }
 }
+
+.subjecttitle{
+  color:#fe763a;
+  text-align: center;
+}
+
+
+#userCategory{
+  width: 100%;
+  padding: 5px;
+}
+
+.searchuser{
+  background: #fff;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #e4e4e4;
+    input{
+      background: #fff;
+       border: 0;
+    }
+}
+
+
+
+
+.resulttable{
+  color:#000;
+
+  .thcus th{
+    color:#fff;
+      background-color: #65545c;
+      border-color: #65545c;
+      padding: 2px;
+      border: 1px solid #58444d;
+    }
+    td{
+      padding: .75rem;
+      vertical-align: top;
+      border: 1px solid #ececec;
+    }
+
+}
+
+.usersin{
+@extend .resulttable;
+h4{
+  text-align: right;
+  background: #3F51B5;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+}
+}
+
+.usersfrom{
+  @extend .usersin;
+  h4{
+
+    background: #ce2a1e;
+
+  }
+  }
+
+  .outadd{
+    .form-group{
+      border: 1px solid #e2e1e1;
+      label{
+        font-size: 14px;
+      }
+      input{
+        width: 100%;
+        font:$secondFont;
+        padding: 3px;
+      }
+
+      .form-check-input {
+        width: 2% !important;
+      }
+
+
+
+
+    }
+  }

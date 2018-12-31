@@ -21,9 +21,6 @@ $(".notification").hide(500);
 
 
 
-
-
-
 	// Ripple-effect animation
 	$(".ripple-effect").click(function(e) {
 		var rippler = $(this);
@@ -167,6 +164,25 @@ $('.trashed').on('click', function(){
 
 $('.trash').on('click', function(){
   $(this).closest(".filess").remove();
+});
+
+
+
+$('.trashtr').on('click', function(){
+  $(this).closest("tr").remove();
+});
+
+
+
+$(function() {
+  $('#userCategory').change(function(){
+      $('.users').hide();
+      $('#' + $(this).val()).show();
+  });
+});
+
+$(".closediv").click(function(){
+  $(".mainadd").hide();
 });
 
 
