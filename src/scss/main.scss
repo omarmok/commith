@@ -2317,3 +2317,17 @@ h4{
 
     }
   }
+
+
+  #selsubject{
+    width: 100%;
+    padding: 5px;
+
+      -webkit-appearance: none !important;
+      border-radius: 0 !important;
+      -webkit-border-radius: 0px !important;
+      background: url(../images/arrow-down.png)#d0d0d0 no-repeat 12px !important;
+      color: #312c2c;
+      border-color: rgba(166, 166, 166, 0);
+
+  }
