@@ -2234,6 +2234,13 @@ img{
 #userCategory{
   width: 100%;
   padding: 5px;
+
+    -webkit-appearance: none !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0px !important;
+    background: url(../images/arrow-down.png) #cb9d30 no-repeat 12px !important;
+    color: #fff;
+
 }
 
 .searchuser{
@@ -2254,11 +2261,11 @@ img{
   color:#000;
 
   .thcus th{
-    color:#fff;
-      background-color: #65545c;
-      border-color: #65545c;
-      padding: 2px;
-      border: 1px solid #58444d;
+    color: #292828;
+    background-color: rgb(220, 220, 220);
+    border-color: #65545c;
+    padding: 7px;
+    border: 1px solid #58444d0f;
     }
     td{
       padding: .75rem;
@@ -2273,6 +2280,7 @@ img{
 h4{
   text-align: right;
   background: #3F51B5;
+  border-right: 10px solid rgba(0, 0, 0, 0.16862745098039217);
   color: #fff;
   padding: 10px;
   font-size: 20px;

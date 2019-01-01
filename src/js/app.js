@@ -191,13 +191,19 @@ $(".closediv").click(function(){
 
 $('input[type="radio"]').on('click', function(){
   if($(this).attr("value")=="attends"){
-    $(".appologytext").hide('slow');
+
+    $(this).closest(".iftrached").find(".appologytext").hide();
+
+
   }
+
   if($(this).attr("value")=="absens"){
-    $(".appologytext").hide('slow');
+
+    $(this).closest(".iftrached").find(".appologytext").hide();
   }
   if($(this).attr("value")=="appology"){
-    $(".appologytext").show();
+
+    $(this).closest(".iftrached").find(".appologytext").show();
   }
 });
 
