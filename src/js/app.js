@@ -1,26 +1,21 @@
+
+
+$(document).ready(function() {
+
 (function($) {
-
-	$(".close").click(function(){
-$(".notification").hide(500);
-	 });
-
- $('[data-toggle="info"]').tooltip();
-
-
- var scrollButton = $('.seetings');
-    $(window).scroll(function () {
-        $(this).scrollTop() >= 100 ? scrollButton.show() : scrollButton.hide();
-    });
-      scrollButton.click(function () {
-          $('html,body').animate({
-              scrollTop: 0
-          }, 1000);
-});
-
-
-
-
-
+	$(".close").click(function() {
+		$(".notification").hide(500);
+	});
+	$('[data-toggle="info"]').tooltip();
+	var scrollButton = $('.seetings');
+	$(window).scroll(function() {
+		$(this).scrollTop() >= 100 ? scrollButton.show() : scrollButton.hide();
+	});
+	scrollButton.click(function() {
+		$('html,body').animate({
+			scrollTop: 0
+		}, 1000);
+	});
 	// Ripple-effect animation
 	$(".ripple-effect").click(function(e) {
 		var rippler = $(this);
@@ -48,10 +43,7 @@ $(".notification").hide(500);
 		setTimeout(function() {
 			ink.remove();
 		}, 1000);
-  });
-
-
-
+	});
 	// Ripple-effect-All animation
 	function fullRipper(color, time) {
 		setTimeout(function() {
@@ -91,10 +83,7 @@ $(".notification").hide(500);
 				}, 1500);
 			}
 		}, time);
-  }
-
-
-
+	}
 	// Form control border-bottom line
 	$('.blmd-line .form-control').bind('focus', function() {
 		$(this).parent('.blmd-line').addClass('blmd-toggled').removeClass("hf");
@@ -134,77 +123,58 @@ $(".notification").hide(500);
 				$('#login-form').addClass('form-hidden');
 			}, 2000);
 		}
-  });
-
-
-
+	});
 })(jQuery);
-
-$('.goBack').click(function(){
-  window.history.back();
+$('.goBack').click(function() {
+	window.history.back();
 });
-
-
-
-
-$('.trash').on('click', function(){
-  $(this).closest(".maindetails").fadeOut(300);
+$('.trash').on('click', function() {
+	$(this).closest(".maindetails").fadeOut(300);
 });
-
-$('.trashed').on('click', function(){
-  $(this).closest(".topDetails").remove();
+$('.trashed').on('click', function() {
+	$(this).closest(".topDetails").remove();
 });
-
-
-
 // $('.trash').on('click', function(){
 //   $(this).parent().parent().remove();
 // });
-
-
-$('.trash').on('click', function(){
-  $(this).closest(".filess").remove();
+$('.trash').on('click', function() {
+	$(this).closest(".filess").remove();
 });
-
-
-
-$('.trashtr').on('click', function(){
-  $(this).closest("tr").remove();
+$('.trashtr').on('click', function() {
+	$(this).closest("tr").remove();
 });
-
-
-
 $(function() {
-  $('#userCategory').change(function(){
-      $('.users').hide();
-      $('#' + $(this).val()).show();
+	$('#userCategory').change(function() {
+		$('.users').hide();
+		$('#' + $(this).val()).show();
+	});
+});
+$(".closediv").click(function() {
+	$(".mainadd").hide();
+});
+
+$('input[type="radio"]').on('click', function() {
+	if ($(this).attr("value") == "appology") {
+		$(this).closest(".iftrached").find(".appologytext").show();
+	} else {
+		$(this).closest(".iftrached").find(".appologytext").hide();
+	}
+});
+$(".removebtn").click(function() {
+	$(this).closest(".iftrached").find(".appologytext").hide();
+});
+
+
+
+
+  $('.nonBtn').click(function(){
+
+    $(" input[type=radio][value=attends]").attr("checked", "checked");
   });
-});
-
-$(".closediv").click(function(){
-  $(".mainadd").hide();
-});
 
 
 
-
-
-$('input[type="radio"]').on('click', function(){
-  if($(this).attr("value")=="attends"){
-
-    $(this).closest(".iftrached").find(".appologytext").hide();
-
-
-  }
-
-  if($(this).attr("value")=="absens"){
-
-    $(this).closest(".iftrached").find(".appologytext").hide();
-  }
-  if($(this).attr("value")=="appology"){
-
-    $(this).closest(".iftrached").find(".appologytext").show();
-  }
+  
 });
 
 

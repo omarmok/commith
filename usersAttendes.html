@@ -94,173 +94,117 @@
 					<div class="col Sissiontitle p-3 d-flex flex-column justify-content-between">
 						<div class="maintitle d-flex justify-content-between">
 							<a class="temp p-2" href="" target="_self" title=" إدارة الجلسات"><i class="fa fa-gear"></i> إدارة الجلسات</a> <a class="sissionPage p-2 acolor" href="" target="_self" title=" المواضيع"><img alt="اللجان" class=" ml-1" src="assets/images/attendance.png"> تحضير الاعضاء</a>
-              <h5><img alt="اللجان" class=" ml-1" src="assets/images/folder.svg">لجنة مراجعة البوابة الجديدة لنظام اللجان والمجالس</h5>
-
+							<h5><img alt="اللجان" class=" ml-1" src="assets/images/folder.svg">لجنة مراجعة البوابة الجديدة لنظام اللجان والمجالس</h5>
 						</div><!-- add new sission -->
-
 					</div>
 				</div>
 				<div class="row">
 					<div class="col maindetails p-2 mt-3">
+						<table class="table userattenntabel text-center">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">اسم العضو</th>
+									<th scope="col">الصفة</th>
+									<th scope="col">التحضير</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="test">
+									<td>عبدالرحمن الطريق</td>
+									<td>رئيس</td>
+									<td class="iftrached">
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" id="inlineRadio1" name="inlineRadioOptions1" type="radio" value="attends"> <label class="form-check-label" for="inlineRadio1">حاضر</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" id="inlineRadio2" name="inlineRadioOptions1" type="radio" value="absens"> <label class="form-check-label" for="inlineRadio2">غائب</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" id="inlineRadio3" name="inlineRadioOptions1" type="radio" value="appology"> <label class="form-check-label" for="inlineRadio3">معتذر</label>
+										</div>
+										<div class=" form-group col border-0 rounded-0 appologytext">
+											<textarea class="form-control textsty" placeholder="يرجي وضع سبب الاعتذار إن وجد"></textarea> <button class="btn removebtn sendBtn border-0 rounded-0 ml-2 pl-4 pr-4 mt-2" type="button">إعتماد</button> <button class="btn removebtn nonBtn border-0 rounded-0 ml-2 pl-4 pr-4 mt-2" type="button">إلغاء</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>عبدالرحمن الطريق</td>
+									<td>عضو</td>
+									<td class="iftrached">
+										<div class="form-check form-check-inline attends">
+											<input class="form-check-input" id="inlineRadio1" name="inlineRadioOptions2" type="radio" value="attends"> <label class="form-check-label" for="inlineRadio1">حاضر</label>
+										</div>
+										<div class="form-check form-check-inline absens">
+											<input class="form-check-input" id="inlineRadio2" name="inlineRadioOptions2" type="radio" value="absens"> <label class="form-check-label" for="inlineRadio2">غائب</label>
+										</div>
+										<div class="form-check form-check-inline appology">
+											<input class="form-check-input" id="inlineRadio3" name="inlineRadioOptions2" type="radio" value="appology"> <label class="form-check-label" for="inlineRadio3">معتذر</label>
+										</div>
+										<div class=" form-group col border-0 rounded-0 appologytext">
+											<textarea class="form-control textsty" placeholder="يرجي وضع سبب الاعتذار إن وجد"></textarea> <button class="btn removebtn sendBtn border-0 rounded-0 ml-2 pl-4 pr-4 mt-2" type="button">إعتماد</button> <button class="btn removebtn nonBtn border-0 rounded-0 ml-2 pl-4 pr-4 mt-2" type="button">إلغاء</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>عبدالرحمن الطريق</td>
+									<td>رئيس</td>
+									<td class="iftrached">
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" id="inlineRadio1" name="inlineRadioOptions3" type="radio" value="attends"> <label class="form-check-label" for="inlineRadio1">حاضر</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" id="inlineRadio2" name="inlineRadioOptions3" type="radio" value="absens"> <label class="form-check-label" for="inlineRadio2">غائب</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" id="inlineRadio3" name="inlineRadioOptions3" type="radio" value="appology"> <label class="form-check-label" for="inlineRadio3">معتذر</label>
+										</div>
+										<div class=" form-group col border-0 rounded-0 appologytext">
+											<textarea class="form-control textsty" placeholder="يرجي وضع سبب الاعتذار إن وجد"></textarea> <button class="btn removebtn sendBtn border-0 rounded-0 ml-2 pl-4 pr-4 mt-2" type="button">إعتماد</button> <button class="btn removebtn nonBtn border-0 rounded-0 ml-2 pl-4 pr-4 mt-2" type="button">إلغاء</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+            </table>
+
+            <div class="row  justify-content-center">
+                <a href="SissionDetails.html" title="" target="_self" class="btn sendBtn border-0 rounded-0 ml-2 pl-4 pr-4"  >حفظ</a>
+                <button class="btn nonBtn border-0 rounded-0 ml-2 pl-4 pr-4" type="button" type="button">تحضير الكل</button>
+
+            </div>
 
 
 
-
-              <table class="table userattenntabel text-center">
-                  <thead class="thead-dark">
-                    <tr>
-                      <th scope="col">اسم العضو </th>
-                      <th scope="col">الصفة</th>
-                      <th scope="col">التحضير</th>
-
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="test" >
-
-                      <td>عبدالرحمن الطريق</td>
-                      <td>رئيس</td>
-                      <td class="iftrached">
-
-                          <div class="form-check form-check-inline ">
-                              <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio1" value="attends">
-                              <label class="form-check-label" for="inlineRadio1">حاضر</label>
-                            </div>
-                            <div class="form-check form-check-inline ">
-                              <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio2" value="absens">
-                              <label class="form-check-label" for="inlineRadio2">غائب</label>
-                            </div>
-                            <div class="form-check form-check-inline ">
-                              <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio3" value="appology" >
-                              <label class="form-check-label" for="inlineRadio3" >معتذر</label>
-                            </div>
-
-
-
-    <div  class=" form-group col border-0 rounded-0 appologytext">
-        <textarea class="form-control textsty" placeholder="يرجي وضع سبب الاعتذار إن وجد"></textarea>
-      </div>
-</div>
-
-
-
-                      </td>
-                    </tr>
-                    <tr>
-
-                        <td>عبدالرحمن الطريق</td>
-                        <td>عضو</td>
-                        <td class="iftrached">
-
-                            <div class="form-check form-check-inline attends">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="attends">
-                                <label class="form-check-label" for="inlineRadio1">حاضر</label>
-                              </div>
-                              <div class="form-check form-check-inline absens">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="absens">
-                                <label class="form-check-label" for="inlineRadio2">غائب</label>
-                              </div>
-                              <div class="form-check form-check-inline appology">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="appology" >
-                                <label class="form-check-label" for="inlineRadio3" >معتذر</label>
-                              </div>
-
-
-
-
-
-    <div  class=" form-group col border-0 rounded-0 appologytext">
-        <textarea class="form-control textsty" placeholder="يرجي وضع سبب الاعتذار إن وجد"></textarea>
-      </div>
-
-
-                        </td>
-                      </tr>
-                      <tr>
-
-                          <td>عبدالرحمن الطريق</td>
-                          <td>رئيس</td>
-                          <td class="iftrached">
-
-                              <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="attends">
-                                  <label class="form-check-label" for="inlineRadio1">حاضر</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="absens">
-                                  <label class="form-check-label" for="inlineRadio2">غائب</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="appology" >
-                                  <label class="form-check-label" for="inlineRadio3" >معتذر</label>
-                                </div>
-
-
-
-
-                                    <div  class=" form-group col border-0 rounded-0 appologytext">
-                                        <textarea class="form-control textsty" placeholder="يرجي وضع سبب الاعتذار إن وجد"></textarea>
-                                      </div>
-
-
-                          </td>
-                        </tr>
-                  </tbody>
-                </table>
-
-
-<h5 class="abstitle text-right mt-2"> الاعضاء المعتذرين</h5>
-                <table class="table absenstabel text-center">
-                    <thead class="thead-dark">
-                      <tr>
-                        <th scope="col">اسم العضو </th>
-                        <th scope="col">نص الاعتذار</th>
-                        <th scope="col">التاريخ</th>
-
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-
-                        <td>عبدالرحمن الطريق</td>
-                        <td>ظرف طاريء</td>
-
-                        <td class="engfo">
-                            9:00
-                         1440 /10 /14
-                        </td>
-                      </tr>
-
-                      <tr>
-
-                          <td>عبدالرحمن الطريق</td>
-                          <td>ظرف طاريء</td>
-
-                          <td class="engfo">
-                              9:00
-                           1440 /10 /14
-                          </td>
-                        </tr>
-
-
-                        <tr>
-
-                            <td>عبدالرحمن الطريق</td>
-                            <td>ظرف طاريء</td>
-
-                            <td class="engfo">
-                                9:00
-                             1440 /10 /14
-                            </td>
-                          </tr>
-
-
-                    </tbody>
-                  </table>
-
-
+						<h5 class="abstitle text-right mt-2">الاعضاء المعتذرين</h5>
+						<table class="table absenstabel text-center">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">اسم العضو</th>
+									<th scope="col">نص الاعتذار</th>
+									<th scope="col">التاريخ</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>عبدالرحمن الطريق</td>
+									<td>ظرف طاريء</td>
+									<td class="engfo">9:00 1440 /10 /14</td>
+								</tr>
+								<tr>
+									<td>عبدالرحمن الطريق</td>
+									<td>ظرف طاريء</td>
+									<td class="engfo">9:00 1440 /10 /14</td>
+								</tr>
+								<tr>
+									<td>عبدالرحمن الطريق</td>
+									<td>ظرف طاريء</td>
+									<td class="engfo">9:00 1440 /10 /14</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-				</div>
+        </div>
+
+
 			</div>
 		</div>
 	</div><!-- end popup buttons -->
