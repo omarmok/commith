@@ -25,7 +25,9 @@ ul {
 }
 .acolor{
   color:#fff;
-
+}
+.concolor{
+  color:#ee4638;
 }
 .sendBtn{
   background: #66bb6a !important;  color:#fff;
@@ -726,6 +728,7 @@ input:-webkit-autofill {
     margin: 0;
     padding: 0;
     width: 100%;
+
   }
   li {
     list-style-type: none;
@@ -735,16 +738,21 @@ input:-webkit-autofill {
     cursor: pointer;
     background: #0c6eb9;
     color: #fff;
+    border-radius: 10px 0 0 0;
+
     ul {
       display: none;
       background: #0c6eb9;
       position: absolute;
       z-index: 999999;
+
+
     }
     li {
       cursor: pointer;
       text-align: right;
       font-weight: normal;
+
       &:hover {
         background-color: #0c6eb9;
         color: #62555c;
@@ -755,6 +763,8 @@ input:-webkit-autofill {
       z-index: 500;
       /* position: fixed; */
       max-width: 380px;
+
+
     }
   }
 }
@@ -1257,7 +1267,7 @@ ul{
 	width: 250px;
 	display: block;
 	position: fixed;
-	z-index: 9999;
+	z-index: 1000;
 	top: 25%;
 	background: #fff;
 	border-radius: 20px 0 0 20px;
@@ -2331,3 +2341,89 @@ h4{
       border-color: rgba(166, 166, 166, 0);
 
   }
+
+  .sissionpaper{
+    background: #66bb6a;
+    img{
+      width: 23px;
+    }
+
+  }
+
+
+  .resulttable{
+    color:#000;
+
+    .thcusme th{
+      color: #ffffff;
+    background-color: #cb9d30;
+    border-color: #65545c;
+    padding: 7px;
+    border: 1px solid #ad8003;
+      }
+      td{
+        padding: .75rem;
+        vertical-align: top;
+        border: 1px solid #ececec;
+      }
+      .secondfont{
+        font:$secondFont;
+        font-size: 14px;
+      }
+
+  }
+
+  .headtitle{
+    color:#c83b1f;
+
+  }
+.head2{
+  color:#338fea;
+}
+  .thcusme2 th{
+    color: #fff;
+  background-color: #338fea;
+  border-color: #26a3f7;
+  padding: 7px;
+  border: 1px solid #338fea;
+    }
+
+
+      .th3 th{
+        background-color: #65545c !important;
+        border-color: #8e7d85;
+    border: 1px solid #827179;
+      }
+
+      .th4 th{
+        background-color: #4CAF50 !important;
+        border-color: #0bcc52;
+        border: 1px solid #05c14a;
+      }
+
+      .th5 th{
+        background-color: #9d8a70 !important;
+        border-color: #b59d7f;
+        border: 1px solid #c1a889;
+      }
+
+      .th6 th{
+        background-color: #312575 !important;
+        border-color: #51449e;
+        border: 1px solid #4e3fa2;
+      }
+
+.sour{
+  background: #fff;
+}
+
+
+  @media (min-width: 576px){
+    .sendsign{
+      .modal-dialog {
+          max-width: 500px;
+          margin: 14.75rem auto;
+      }
+      }
+  }
+  
