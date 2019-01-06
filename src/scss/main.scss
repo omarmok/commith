@@ -75,7 +75,7 @@ body {
 	font-family: "GE Dinar Two Medium", Arial, sans-serif;
 	overflow-x: hidden !important;
 	direction: rtl;
-	background: url(/assets/images/bg.png) no-repeat left -390% #f8f9fc;
+	background: url(/assets/images/bg.png) no-repeat left  #f8f9fc;
 }
 input:-webkit-autofill {
           -webkit-text-fill-color: none !important;
@@ -2426,4 +2426,12 @@ h4{
       }
       }
   }
-  
+
+  .nonBtne{
+    background: #7f7f7f !important;
+    color:#fff;
+  }
+
+  .minhe{
+    min-height: 700px;
+  }

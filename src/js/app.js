@@ -167,14 +167,20 @@ $(".removebtn").click(function() {
 
 
 
-  $('.nonBtn').click(function(){
+  $('.btnall').click(function(){
 
-    $(" input[type=radio][value=attends]").attr("checked", "checked");
+    $(" input[type=radio][value=attends]").attr("checked", true);
+  });
+
+  $('.unnall').click(function(){
+
+    $(" input[type=radio][value=attends]").attr("checked", false);
   });
 
 
 
-  
+
+
 });
 
 
