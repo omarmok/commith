@@ -8,6 +8,17 @@
 	src: url("../fonts/GEDinarTwo-Medium.eot");
 	src: url("../fonts/GEDinarTwo-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GEDinarTwo-Medium.ttf") format("truetype"), url("../fonts/GEDinarTwo-Medium.svg#GEDinarTwo-Medium") format("svg")
 }
+
+
+$main: #096eb9;
+$yellow:#aa9656;
+$background-color: #f8f9fc;
+$search-bg-color: #ffffff;
+$icon-color: #4f8fe3;
+$transition: all .5s ease;
+
+$secondFont: 600 12px sans-serif;
+
 button:focus {
 	outline: 0 auto -webkit-focus-ring-color
 }
@@ -22,21 +33,6 @@ a {
 ul {
 	list-style: none;
 	padding-right: 0
-}
-.acolor{
-  color:#fff;
-}
-.concolor{
-  color:#ee4638;
-}
-.sendBtn{
-  background: #66bb6a !important;  color:#fff;
-}
-.nonBtn{
-  background: #ee4638 !important;  color:#fff;
-}
-.modal-footer{
-  background:#fff;
 }
 select {
   -webkit-appearance: none !important;
@@ -55,21 +51,7 @@ textarea {
   border:1px solid #ccc !important;
   }
 
-$main: #096eb9;
-$yellow:#aa9656;
-$background-color: #f8f9fc;
-$search-bg-color: #ffffff;
-$icon-color: #4f8fe3;
-$transition: all .5s ease;
 
-$secondFont: 600 12px sans-serif;
-// body {
-// 	background: #f8f9fc;
-// 	font-family: "GE Dinar Two Medium", Arial, sans-serif;
-// 	overflow-x: hidden !important;
-// 	direction: rtl;
-// 	background: url(/assets/images/bg.png) no-repeat left -1170% #f8f9fc;
-// }
 body {
 	background: #f8f9fc;
 	font-family: "GE Dinar Two Medium", Arial, sans-serif;
@@ -115,6 +97,29 @@ input:-webkit-autofill {
               }
             }
 
+
+
+
+
+.acolor{
+  color:#fff;
+}
+.concolor{
+  color:#ee4638;
+}
+.sendBtn{
+  background: #66bb6a !important;  color:#fff;
+}
+.nonBtn{
+  background: #ee4638 !important;  color:#fff;
+}
+.modal-footer{
+  background:#fff;
+}
+
+.minhe{
+  min-height: 700px;
+}
 
 
 // loginPage
@@ -2432,6 +2437,3 @@ h4{
     color:#fff;
   }
 
-  .minhe{
-    min-height: 700px;
-  }
