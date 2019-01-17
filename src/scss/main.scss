@@ -2449,3 +2449,93 @@ h4{
   }
 
 }
+
+.ownerSection{
+	background: rgba(255, 255, 255, 0.49) !important;
+	box-shadow: 0 6px 14px 0 rgba(52,69,88,0.08) !important;
+a{
+	color:#fff;
+	background: #009789;
+	padding:10px;
+}
+	img{
+		width: 100px;
+		margin-bottom: 10px;
+
+	}
+
+	label{
+		color:#000;
+		// text-align: right;
+	}
+
+}
+
+.owtitle{
+	background: #009789;
+	a{
+		color:#fff;
+		background: rgba(0, 151, 137, 0);
+	}
+}
+
+.ownertabelecon{
+	.ownertabele{
+		th{
+			background-color: #bb7814;
+			border-color: #bb7900;
+			text-align: center;
+		}
+
+
+	}
+
+}
+
+.ownertabele2{
+	th{
+		background-color: #0c8675;
+		border-color: #0c8675;
+		text-align: center;
+	}
+
+}
+.ttd{
+	color: #000 ;
+	background: #f3f3f3 ;
+	border: 1px solid #dedddd;
+	text-align: center;
+	font:$secondFont;
+	font-size: 14px;
+	a{
+		background: transparent;
+	}
+}
+.changefont{
+	font:$secondFont;
+	font-size: 14px;
+}
+.inused{
+	background:#006ebf ;
+	color:#fff;
+}
+.took{
+	background:#f2405d ;
+	color:#fff;
+}
+
+.redBtn{
+	background:#f2405d !important;
+}
+.orangBtn{
+	background:#fe763a !important;
+}
+
+.maai{
+input{
+	margin-left: 10px;
+	-webkit-appearance:checkbox;
+		-moz-appearance: checkbox;
+}
+
+}
